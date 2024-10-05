@@ -1,0 +1,210 @@
+.container{
+    padding:1.3rem;
+    background: rgb(253,253,253);
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+.backDropContainer{
+    width: 100%;
+    height: 30vh;
+    background:url("https://images.pexels.com/photos/19880490/pexels-photo-19880490/free-photo-of-beautiful-clouds-and-amazing-sea-view.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+.backDropContainer img{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+
+
+}
+
+.profileContainer_details{
+    padding-top: 6.6rem;
+}
+.card{
+    display: flex;
+    align-items: center;
+    gap:1.4rem;
+}
+
+/* .backDrop{
+    width:3.4rem;
+    height:auto;
+    height:3.4rem;
+    object-fit: cover;
+    position: relative;
+
+} */
+.backDrop_overlay{
+    
+   
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius:50%;
+    position:absolute;
+    bottom: -30%;
+    left:8%;
+    text-align: center;
+    transition: all 0.4s;
+    z-index: 4;
+    cursor: pointer;
+    color:white;
+    opacity: 0.0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.backDrop_overlay:hover{
+    opacity: 0.8;
+    background:black;
+}
+
+.connectBtn{
+    padding-inline:0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3,93,183,0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border: 10px;
+    cursor: pointer;
+}
+.connectedButton{
+    padding-inline:0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3,93,183,0.905);
+    outline: none;
+    border: 1px solid silver;
+    color: white;
+    border: 10px;
+    cursor: pointer;
+}
+.workHistoryContainer{
+    display: flex;
+    gap:1.4rem;
+    padding-top: 1.4rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.workHistoryCard{
+    min-width: fit-content;
+    padding-block: 1rem;
+    padding: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(173,173,173);
+}
+.profileContainer_details input{
+    outline: none;
+    border-style: none;
+    padding-inline: 10px;
+    padding-bottom: 9px;
+    width: fit-content;
+}
+.nameEdit{
+    font-size:1rem;
+    font-weight:bold ;
+}
+.updateProfileBtn{
+    padding-inline:0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(3,93,183,0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+.profileContainer_details textarea{
+    outline: none;
+    border: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+    font-family:"Poppins " !important;
+    font-size: 1.1rem;
+}
+.addWorkButton{
+   
+    padding-inline: 1.3rem;
+    background:white;
+    border: 1px dotted silver;
+    padding-block: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.commentsContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    z-index: 2;
+    background:rgba(0,0,0,0.7);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+.allCommentContainer{
+    width: 40vw;
+    height: fit-content;
+    background-color:white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+.allCommentContainer div{
+    border-radius: 10px;
+}
+.inputField{
+    padding-inline: 1.3rem;
+    padding-block:0.8rem;
+    outline:none;
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 100%;
+}
+.workHistoryCard p{
+    padding: 0.5rem;
+    
+}
+
+.profileContainer_details_merge{
+    display: flex;
+    gap: 5rem;
+}
+.profileContainer_details_merge_one{
+    flex: 0.6;
+}
+.profileContainer_details_merge_two{
+    flex: 0.4;
+}
+@media only screen and (max-width: 600px) {
+    
+     .profileContainer_details_merge{
+        display: inline;
+     }
+     .card_profileContainer img{
+        width: 10rem;
+     }
+    .allCommentContainer{
+        width: 80vw;
+    }
+}
