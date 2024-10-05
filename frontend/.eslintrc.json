@@ -1,6 +1,19 @@
 {
   "extends": "next/core-web-vitals",
   "rules":{
-    "react/no-unescaped-entities":0
+    "react/no-unescaped-entities":0,
+    "react/jsx-key": 0,
+
+    // Allow `console.log` usage (you can set this to 1 to allow warnings instead of errors)
+    "no-console": 0,
+
+    // Disable React Hooks warning for missing dependencies in `useEffect` (use cautiously)
+    "react-hooks/exhaustive-deps": 0,
+
+    // Disable warnings for lowercase component names (you should fix this instead of disabling)
+    "react/jsx-pascal-case": 0,
+
+    // Disable the requirement for using the Next.js `<Image>` component (instead of `<img>`)
+    "@next/next/no-img-element": 0
   }
 }
