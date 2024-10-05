@@ -1,23 +1,69 @@
+// {
+//   "extends": "next/core-web-vitals",
+//   "rules":{
+//     "react/no-unescaped-entities":0,
+//     // Disable warning for missing "key" prop in lists (fix this in the future for better React performance)
+//     "react/jsx-key": 0,
+
+//     // Allow `console.log` usage
+//     "no-console": 0,
+
+//     // Disable React Hooks warning for missing dependencies in `useEffect`
+//     "react-hooks/exhaustive-deps": 0,
+
+//     // Disable PascalCase requirement for React component names
+//     "react/jsx-pascal-case": 0,
+
+//     // Allow the use of <img> tags instead of the Next.js <Image> component
+//     "@next/next/no-img-element": 0,
+
+//     // Allow use of lowercase component names (for now)
+//     "react/function-component-definition": [
+//       0,
+//       {
+//         "namedComponents": "function-declaration",
+//         "unnamedComponents": "arrow-function"
+//       }
+//     ],
+
+//     // Turn off errors related to React component names not starting with uppercase letters
+//     "react/display-name": 0,
+
+//     // Disable rule for naming convention (since you're calling your components with lowercase letters)
+//     "react-hooks/rules-of-hooks": 0,
+
+//     // Allow prop spreading (use with caution, it's better to pass specific props)
+//     "react/jsx-props-no-spreading": 0,
+
+//     // Turn off rule for missing PropTypes (optional based on your needs)
+//     "react/prop-types": 0,
+
+//     // Allow multiple React components in a single file
+//     "react/no-multi-comp": 0,
+
+//     // Disable strict return rules in JSX components
+//     "react/jsx-no-useless-fragment": 0,
+
+//     // Allow usage of `any` types (you should ideally avoid using 'any' in TypeScript projects)
+//     "@typescript-eslint/no-explicit-any": 0,
+
+//     // Disable warnings for default exports
+//     "import/prefer-default-export": 0,
+
+//     // Disable rules requiring destructuring (you can enable this for cleaner code)
+//     "react/destructuring-assignment": 0
+//   }
+// }
+
 {
   "extends": "next/core-web-vitals",
-  "rules":{
-    "react/no-unescaped-entities":0,
-    // Disable warning for missing "key" prop in lists (fix this in the future for better React performance)
+  "rules": {
+    "react/no-unescaped-entities": 0,
     "react/jsx-key": 0,
-
-    // Allow `console.log` usage
     "no-console": 0,
-
-    // Disable React Hooks warning for missing dependencies in `useEffect`
     "react-hooks/exhaustive-deps": 0,
-
-    // Disable PascalCase requirement for React component names
     "react/jsx-pascal-case": 0,
-
-    // Allow the use of <img> tags instead of the Next.js <Image> component
     "@next/next/no-img-element": 0,
-
-    // Allow use of lowercase component names (for now)
     "react/function-component-definition": [
       0,
       {
@@ -25,32 +71,18 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-
-    // Turn off errors related to React component names not starting with uppercase letters
     "react/display-name": 0,
-
-    // Disable rule for naming convention (since you're calling your components with lowercase letters)
     "react-hooks/rules-of-hooks": 0,
-
-    // Allow prop spreading (use with caution, it's better to pass specific props)
     "react/jsx-props-no-spreading": 0,
-
-    // Turn off rule for missing PropTypes (optional based on your needs)
     "react/prop-types": 0,
-
-    // Allow multiple React components in a single file
     "react/no-multi-comp": 0,
-
-    // Disable strict return rules in JSX components
     "react/jsx-no-useless-fragment": 0,
-
-    // Allow usage of `any` types (you should ideally avoid using 'any' in TypeScript projects)
     "@typescript-eslint/no-explicit-any": 0,
-
-    // Disable warnings for default exports
     "import/prefer-default-export": 0,
+    "react/destructuring-assignment": 0,
 
-    // Disable rules requiring destructuring (you can enable this for cleaner code)
-    "react/destructuring-assignment": 0
+    // Disable alt text warning
+    "jsx-a11y/alt-text": 0
   }
 }
+
