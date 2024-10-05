@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css';
 import { useRouter } from 'next/router';
-import { Cursor } from 'mongoose';
 import { useDispatch, useSelector } from 'react-redux';
 import { reset } from '@/config/redux/reducer/authReducer';
 
