@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 import styles from "./index.module.css"
 import { BASE_URL } from '@/config';
 import { useRouter } from 'next/router';
-import { connect, connection } from 'mongoose';
 // import { useEffect } from 'react/cjs/react.production.min';
 
 export default function MyConnectionsPage() {
