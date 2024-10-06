@@ -56,8 +56,12 @@
 // }
 
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
+  "extends": "next/core-web-vitals"
+  
+}
+
+/*
+"rules": {
     "react/no-unescaped-entities": 0,
     "react/jsx-key": 0,
     "no-console": 0,
@@ -84,5 +88,5 @@
     // Disable alt text warning
     "jsx-a11y/alt-text": 0
   }
-}
 
+*/
