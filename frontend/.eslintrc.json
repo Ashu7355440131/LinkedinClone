@@ -59,7 +59,13 @@
   "extends": "next/core-web-vitals",
   "rules":{
     "react/no-unescaped-entities": 0,
-    "react/jsx-key": 0,
+    
+    "jsx-a11y/alt-text": 0
+  }
+}
+
+/*
+"react/jsx-key": 0,
     "no-console": 0,
     "react-hooks/exhaustive-deps": 0,
     "react/jsx-pascal-case": 0,
@@ -82,6 +88,4 @@
     "react/destructuring-assignment": 0,
 
     // Disable alt text warning
-    "jsx-a11y/alt-text": 0
-  }
-}
+*/
