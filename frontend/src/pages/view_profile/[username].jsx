@@ -92,7 +92,7 @@ const getUserPost=async()=>{
             }</button>
           :<button onClick={()=>{
             dispatch(sendConnectionRequest({token:localStorage.getItem("token"),user_id:userProfile.userId._id}));
-            //setIsCurrentUserInConnect(true); 
+           
             
           }} className={styles.connectBtn}>Connect</button>
         }
