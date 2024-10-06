@@ -58,14 +58,8 @@
 {
   "extends": "next/core-web-vitals",
   "rules":{
-    "react/no-unescaped-entities": 0,
-    
-    "jsx-a11y/alt-text": 0
-  }
-}
-
-/*
-"react/jsx-key": 0,
+    "react/no-unescaped-entities":0,
+    "react/jsx-key": 0,
     "no-console": 0,
     "react-hooks/exhaustive-deps": 0,
     "react/jsx-pascal-case": 0,
@@ -86,6 +80,12 @@
     "@typescript-eslint/no-explicit-any": 0,
     "import/prefer-default-export": 0,
     "react/destructuring-assignment": 0,
+    "jsx-a11y/alt-text": 0
+  }
+}
+
+/*
+
 
     // Disable alt text warning
 */
