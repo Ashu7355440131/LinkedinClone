@@ -1,6 +1,6 @@
 const {default:axios}=require("axios");
 
-export const BASE_URL="http://localhost:3080"
+export const BASE_URL="https://linkedinclone-5.onrender.com"
 export const clientServer=axios.create({
     baseURL:BASE_URL
 })
