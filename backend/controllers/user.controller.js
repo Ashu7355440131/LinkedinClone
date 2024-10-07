@@ -157,6 +157,7 @@ export const updateUserProfile=async(req,res)=>{
 export const getUserAndProfile=async(req,res)=>{
     try{
         const {token}=req.query;
+        console.log(`token ${token}`);
         
         const user=await User.findOne({token:token});
         
